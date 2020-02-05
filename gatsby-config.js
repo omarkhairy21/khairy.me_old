@@ -155,6 +155,9 @@ module.exports = {
                         }
                     }
                 }`,
+                plugins: [
+                    `gatsby-remark-prismjs`,
+                ],
                 mapping: {
                     allGhostPost: {
                         sitemap: `posts`,
@@ -179,6 +182,14 @@ module.exports = {
                 addUncaughtPages: true,
             },
         },
+        // {
+        //     resolve: `gatsby-transformer-remark`,
+        //     options: {
+        //         plugins: [
+        //             `gatsby-remark-prismjs`
+        //         ],
+        //     },
+        // },
         `gatsby-plugin-catch-links`,
         `gatsby-plugin-react-helmet`,
         `gatsby-plugin-force-trailing-slashes`,

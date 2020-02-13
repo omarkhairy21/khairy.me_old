@@ -1,10 +1,10 @@
 {
   "development": {
-    "apiUrl": "https://omarkhairy.ghost.io",
-    "contentApiKey": "747176516eff1d9d9b498a31d8"
+    "apiUrl": "http://localhost:2368",
+    "contentApiKey": "ee4b27fa0c0330b3be246df21a"
   },
   "production": {
-    "apiUrl": "https://omarkhairy.ghost.io",
-    "contentApiKey": "747176516eff1d9d9b498a31d8"
+    "apiUrl": "https://ghost.khairy.me/",
+    "contentApiKey": "ee4b27fa0c0330b3be246df21a"
   }
 }

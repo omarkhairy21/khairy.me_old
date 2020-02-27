@@ -67,6 +67,7 @@
 .post-card-excerpt {
     font-size: 1.6rem;
     line-height: 1.55em;
+    color: var(--color-border);
 }
 
 .post-card-image {

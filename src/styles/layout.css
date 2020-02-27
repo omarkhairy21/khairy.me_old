@@ -29,7 +29,7 @@
 .post-full-content {
   max-width: 720px;
   margin: 0 auto;
-  background: #fff;
+  background-color:  var(--color-base);
 }
 
 .post-feature-image img {

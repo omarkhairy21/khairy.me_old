@@ -8,9 +8,6 @@ export default class Header extends Component {
 
   render(){
     const {site, data, twitterUrl, facebookUrl, isHome, theme } = this.props
-    // const theme = this.context
-    // console.log(this.context)
-    // console.log(theme)
     return( 
     <header className="site-head" style={{ ...site.cover_image && { backgroundImage: `url(${site.cover_image})` } }}>
       <div className="container">

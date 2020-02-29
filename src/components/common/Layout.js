@@ -20,6 +20,7 @@ import '../../styles/app.css'
 */
 const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
     const site = data.allGhostSettings.edges[0].node
+    console.log(bodyClass)
     const twitterUrl = site.twitter ? `https://twitter.com/${site.twitter.replace(/^@/, ``)}` : null
     const facebookUrl = site.facebook ? `https://www.facebook.com/${site.facebook.replace(/^\//, ``)}` : null
 
@@ -65,6 +66,9 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                                 </div>
                                 <div className="site-nav-right">
                                     <Link className="site-nav-button" to="/author/omar">Me</Link>
+                                    <button className="dark-switcher" onClick={theme.toggleDark}>
+                                        {theme.dark ? <span>Light mode ☀</span> : <span>Dark mode ☾</span>}
+                                    </button>
                                 </div>
                             </nav>
                         </div>

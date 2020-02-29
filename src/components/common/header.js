@@ -38,7 +38,7 @@ export default class Header extends Component {
                   <Navigation data={site.navigation} navClass="site-nav-item" />
               </div>
               <div className="site-nav-right">
-                  {/* <Link className="site-nav-button" to="/author/omar">Me</Link> */}
+                  <Link className="site-nav-button" to="/author/omar">Me</Link>
                   <button className='site-nav-button' onClick={theme.toggleDark} style={{background: 'none'}} >
                       {theme.dark ? <span>☀️</span> : <span>🌙</span>}
                   </button>

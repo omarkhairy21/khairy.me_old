@@ -1,10 +1,13 @@
 import React, { Component } from 'react'
+import Img from 'gatsby-image'
+import config from '../../utils/siteConfig'
+import { Link} from 'gatsby'
+import { Navigation } from '.'
 
-class Header extends Component {
-
-  site = this.props.site
+export default class Header extends Component {
 
   render(){
+    const {site, data, twitterUrl, facebookUrl, isHome } = this.props 
     return( 
     <header className="site-head" style={{ ...site.cover_image && { backgroundImage: `url(${site.cover_image})` } }}>
       <div className="container">
@@ -36,9 +39,9 @@ class Header extends Component {
               </div>
               <div className="site-nav-right">
                   <Link className="site-nav-button" to="/author/omar">Me</Link>
-                  <button className="dark-switcher" onClick={theme.toggleDark}>
+                  {/* <button className="dark-switcher" onClick={theme.toggleDark}>
                       {theme.dark ? <span>Light mode ☀</span> : <span>Dark mode ☾</span>}
-                  </button>
+                  </button> */}
               </div>
           </nav>
       </div>
@@ -47,4 +50,5 @@ class Header extends Component {
   }
 }
 
-export default Header;
+
+// export default Header

@@ -4,3 +4,4 @@ plugins/*/node_modules/*
 !plugins/*/src/*.js
 src/context/*
 gatsby-browser.js
+src/*

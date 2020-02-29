@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { Link, StaticQuery, graphql } from 'gatsby'
-
+import ThemeContext from '../../context/ThemeContext'
 import { Navigation, Header } from '.'
 
 
@@ -17,12 +17,11 @@ import '../../styles/app.css'
 * styles, and meta data for each page.
 *
 */
-const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
+const DefaultLayout = ({ data, children, bodyClass, isHome, theme }) => {
     const site = data.allGhostSettings.edges[0].node
-    console.log(bodyClass)
     const twitterUrl = site.twitter ? `https://twitter.com/${site.twitter.replace(/^@/, ``)}` : null
     const facebookUrl = site.facebook ? `https://www.facebook.com/${site.facebook.replace(/^\//, ``)}` : null
-
+    console.log(theme);
     return (
         <>
             <Helmet>
@@ -40,10 +39,11 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                         data={data} 
                         twitterUrl={twitterUrl} 
                         facebookUrl={facebookUrl} 
-                        isHome={isHome}    
+                        isHome={isHome}
+                        theme={theme}    
                         />   
 
-                    <main className="site-main">
+                    <main className={theme.dark ? 'site-main-dark': 'site-main-light' }>
                         {/* All the main content gets inserted here, index.js, post.js */}
                         {children}
                     </main>
@@ -100,7 +100,15 @@ const DefaultLayoutSettingsQuery = props => (
                 }
             }
         `}
-        render={data => <DefaultLayout data={data} {...props} />}
+        render={data => 
+                <ThemeContext.Consumer>
+                {theme => (
+                    <DefaultLayout data={data} {...props} theme={theme}/>
+                    )
+                }
+                </ThemeContext.Consumer>
+            
+            }
     />
 )
 

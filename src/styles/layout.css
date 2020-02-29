@@ -144,3 +144,21 @@
   color: #fff;
   border-radius: 12px;
 }
+
+
+/* Dark Switcher Button 
+ Dark mode styles */
+.dark-switcher {
+  color: #fff;
+  margin-top: 5px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+@media (min-width: 992px) {
+  .dark-switcher {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+  }
+}

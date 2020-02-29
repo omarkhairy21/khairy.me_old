@@ -7,7 +7,10 @@ import { Navigation } from '.'
 export default class Header extends Component {
 
   render(){
-    const {site, data, twitterUrl, facebookUrl, isHome } = this.props 
+    const {site, data, twitterUrl, facebookUrl, isHome, theme } = this.props
+    // const theme = this.context
+    // console.log(this.context)
+    // console.log(theme)
     return( 
     <header className="site-head" style={{ ...site.cover_image && { backgroundImage: `url(${site.cover_image})` } }}>
       <div className="container">
@@ -38,10 +41,11 @@ export default class Header extends Component {
                   <Navigation data={site.navigation} navClass="site-nav-item" />
               </div>
               <div className="site-nav-right">
-                  <Link className="site-nav-button" to="/author/omar">Me</Link>
-                  {/* <button className="dark-switcher" onClick={theme.toggleDark}>
-                      {theme.dark ? <span>Light mode ☀</span> : <span>Dark mode ☾</span>}
-                  </button> */}
+                  {/* <Link className="site-nav-button" to="/author/omar">Me</Link> */}
+                  <button className='site-nav-button' onClick={theme.toggleDark} style={{background: 'none'}} >
+                      {theme.dark ? <span>☀️</span> : <span>🌙</span>}
+                  </button>
+                  
               </div>
           </nav>
       </div>

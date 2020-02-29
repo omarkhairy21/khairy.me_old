@@ -16,9 +16,14 @@
 /* Main
 /* ---------------------------------------------------------- */
 
-.site-main {
+.site-main-dark {
     padding: 4vw 0;
     background-color:  var(--color-base);
+}
+
+.site-main-light {
+    padding: 4vw 0;
+    background-color: #fff;
 }
 
 /* Index

@@ -28,6 +28,13 @@ h6 {
   font-weight: 700;
   text-rendering: optimizeLegibility;
 }
+.light hr{
+  border-top: 1px solid #e3e9ed;
+}
+
+.light .post-card{
+      border: 1px solid #d6d6d6;
+}
 
 .light .post-card-excerpt {
   color: var(--color-base);
@@ -69,6 +76,13 @@ h6 {
   line-height: 1.15;
   font-weight: 700;
   text-rendering: optimizeLegibility;
+}
+.dark hr{
+  border-top: 1px solid #2d333c;
+}
+
+.dark .post-card{
+  border: 1px solid #2d333c;
 }
 .dark .post-card-excerpt {
   color: var(--color-border);

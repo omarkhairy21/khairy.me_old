@@ -61,6 +61,12 @@
 .post-card {
     color: inherit;
     text-decoration: none;
+    border-radius: 4px;
+    transition: color .3s,box-shadow .3s,transform .3s,background-color .3s,border-color .3s,-webkit-transform .3s;
+    position: relative;
+    z-index: 1;
+    padding: 50px;
+    background-color:inherit;
 }
 
 .post-card:hover {
@@ -83,6 +89,7 @@
 .post-card-excerpt {
     font-size: 1.6rem;
     line-height: 1.55em;
+    margin-bottom: 7px;
 }
 
 .post-card-image {
@@ -132,7 +139,16 @@
 .post-card-avatar .default-avatar {
     width: 26px;
 }
-
+.line-gradient {
+    height: 4px;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    margin-top: 18px;
+    background: linear-gradient(90deg,#26a8ed,#edde26 50%,#8ed6fb);
+    /* background: linear-gradient(90deg,#00835c,#8ed6fb 50%,#d32e9d); */
+}
 
 /* Tag Archives
 /* ---------------------------------------------------------- */

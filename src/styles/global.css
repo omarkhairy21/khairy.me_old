@@ -337,12 +337,11 @@ hr {
   position: relative;
   display: block;
   width: 100%;
-  margin: 1.8em 0 2.4em;
+  margin: 3px;
   padding: 0;
   height: 1px;
   border: 0;
-  border-top: 1px solid #e3e9ed;
-}
+ }
 
 audio,
 canvas,

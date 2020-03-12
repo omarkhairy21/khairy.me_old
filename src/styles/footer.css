@@ -14,6 +14,12 @@
   justify-content: space-between;
 }
 
+@media (max-width: 980px) {
+  .site-foot-nav {
+    flex-direction: column;
+  }
+} 
+
 .site-foot-nav a {
   color: rgba(255,255,255,0.7);
 }
@@ -30,4 +36,8 @@
 
 .site-foot-nav-right a:last-child {
   padding-right: 0;
+}
+
+.footer-brand-logo{
+  margin: 0 5px;
 }

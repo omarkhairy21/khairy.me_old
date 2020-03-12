@@ -4,6 +4,7 @@ import Helmet from 'react-helmet'
 import { Link, StaticQuery, graphql } from 'gatsby'
 import ThemeContext from '../../context/ThemeContext'
 import { Navigation, Header } from '.'
+//import gatsbyLogo from '../../../static/images/';
 
 
 // Styles
@@ -55,8 +56,10 @@ const DefaultLayout = ({ data, children, bodyClass, isHome, theme }) => {
                     <footer className="site-foot">
                         <div className="site-foot-nav container">
                             <div className="site-foot-nav-left">
-                                <Link to="/">{site.title}</Link> © 2019 &mdash; Published with <a className="site-foot-nav-item" href="https://ghost.org" target="_blank" rel="noopener noreferrer">Ghost and Gatsby</a>
-                                <span> Deployed In Netlify</span>
+                                <Link to="/">{site.title}</Link> © 2019 &mdash;
+                                Published with <a className="site-foot-nav-item" href="https://ghost.org" target="_blank" rel="noopener noreferrer">Ghost</a>
+                                <span><img className="footer-brand-logo" src="/images/netlify.svg" alt="Netlify" /></span>
+                                <span><img  className="footer-brand-logo" src="/images/gatsby.svg" alt="Gatsby" /></span>
                             </div>
                             <div className="site-foot-nav-right">
                                 <Navigation data={site.navigation} navClass="site-foot-nav-item" />

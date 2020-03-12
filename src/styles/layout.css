@@ -29,8 +29,13 @@
 .post-full-content {
   max-width: 720px;
   margin: 0 auto;
-  background-color:  var(--color-base);
+  background-color: inherit;
 }
+/* .post-full-content-dark {
+  max-width: 720px;
+  margin: 0 auto;
+  background-color: inherit;
+} */
 
 .post-feature-image img {
   margin: 0 0 3vw;
@@ -124,9 +129,10 @@
   font-size: 2.0rem;
   font-weight: 700;
 }
-.content-body p {
+
+/* .content-body p {
   color: var(--color-border);
-}
+} */
 
 .content-body figure {
   margin: 0.4em 0 1.6em;
@@ -143,22 +149,4 @@
   background: var(--color-base);
   color: #fff;
   border-radius: 12px;
-}
-
-
-/* Dark Switcher Button 
- Dark mode styles */
-.dark-switcher {
-  color: #fff;
-  margin-top: 5px;
-  background: transparent;
-  border: none;
-  cursor: pointer;
-}
-@media (min-width: 992px) {
-  .dark-switcher {
-    position: absolute;
-    right: 15px;
-    top: 10px;
-  }
 }

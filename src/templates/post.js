@@ -32,6 +32,7 @@ const Post = ({ data, location }) => {
                             <figure className="post-feature-image">
                                 <img src={ post.feature_image } alt={ post.title } />
                             </figure> : null }
+                        {/* <section className={theme.dark ? 'post-full-content-dark' : 'post-full-content'}> */}
                         <section className="post-full-content">
                             <h1 className="content-title">{post.title}</h1>
 

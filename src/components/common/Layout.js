@@ -21,13 +21,13 @@ const DefaultLayout = ({ data, children, bodyClass, isHome, theme }) => {
     const site = data.allGhostSettings.edges[0].node
     const twitterUrl = site.twitter ? `https://twitter.com/${site.twitter.replace(/^@/, ``)}` : null
     const facebookUrl = site.facebook ? `https://www.facebook.com/${site.facebook.replace(/^\//, ``)}` : null
-    // console.log(theme);
+    console.log(bodyClass);
     return (
         <>
             <Helmet>
                 <html lang={site.lang} />
                 <style type="text/css">{`${site.codeinjection_styles}`}</style>
-                <body className={bodyClass} />
+                <body className={theme.dark ? 'dark': 'light' } />
             </Helmet>
 
             <div className="viewport">

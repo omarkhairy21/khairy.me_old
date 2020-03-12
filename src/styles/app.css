@@ -3,6 +3,11 @@
 */
 @import"global.css";
 
+/*
+    import dark Style
+*/
+@import"dark.css";
+
 /* Layout
 /* ---------------------------------------------------------- */
 
@@ -72,7 +77,6 @@
 .post-card-excerpt {
     font-size: 1.6rem;
     line-height: 1.55em;
-    color: var(--color-border);
 }
 
 .post-card-image {

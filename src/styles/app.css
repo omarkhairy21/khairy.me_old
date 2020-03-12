@@ -38,17 +38,23 @@
     display: grid;
     justify-content: space-between;
     grid-gap: 30px;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    padding: 0px 16vw;
 }
 
 @media (max-width: 980px) {
     .post-feed {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
+        /* grid-template-rows: 100px 1fr; */
+        /* padding: 0px 0px; */
+        padding: 0px 5vw;
     }
 }
 @media (max-width: 680px) {
     .post-feed {
         grid-template-columns: 1fr;
+        padding: 0px 0px;
     }
 }
 

@@ -1,5 +1,2 @@
-# Netlify redirects file, edit with your domain
-# https://www.netlify.com/docs/redirects/
-
-https://gatsby-starter-ghost.netlify.com/*      https://gatsby.ghost.org/:splat    301!
-http://gatsby-starter-ghost.netlify.com/*       https://gatsby.ghost.org/:splat    301!
+# Redirect default Netlify subdomain to primary domain
+https://inspiring-hamilton-9a099b.netlify.com/* https://khairy.me/:splat 301!

@@ -5,7 +5,7 @@
   padding-top: 20px;
   padding-bottom: 20px;
   color: #fff;
-  background: var(--color-base);
+  /* background: var(--color-base); */
   /* background-position: center;
   background-size: cover;
   */
@@ -95,3 +95,13 @@
 .site-nav-button:hover {
   text-decoration: none;
 }
+
+/* Gradient Color For header */
+/* background: linear-gradient(26deg,#26a8ed,#26a8ed 50%,#8ed6fb); 
+background: linear-gradient(45deg, #264aed, #26edd1)
+linear-gradient(45deg, #26edd1, #5b7a81)
+linear-gradient(45deg, #5b7a81,#26edd1 )
+ackground: linear-gradient(45deg, #15171a, #264aed);
+}
+*/
+

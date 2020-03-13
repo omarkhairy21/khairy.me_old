@@ -32,6 +32,17 @@ h6 {
   border-top: 1px solid #e3e9ed;
 }
 
+.light .site-head {
+  background: linear-gradient(45deg, #26edd1, #5b7a81) 
+}
+.light .site-foot {
+  background: #fff;
+  color: #888888;
+}
+.light .site-foot a{
+  color: #888888;
+}
+
 .light .post-card{
       border: 1px solid #d6d6d6;
 }
@@ -80,7 +91,13 @@ h6 {
 .dark hr{
   border-top: 1px solid #2d333c;
 }
-
+.dark .site-head {
+  background: linear-gradient(45deg, #3eb0ef, #2e788f);
+  color: #fff;
+}
+.dark .site-head h1{
+  color: #fff;
+}
 .dark .post-card{
   border: 1px solid #2d333c;
 }

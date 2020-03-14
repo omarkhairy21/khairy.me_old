@@ -44,7 +44,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome, theme }) => {
                         theme={theme}    
                         />   
 
-                    <main className={theme.dark ? 'site-main-dark': 'site-main-light' }>
+                    <main className="site-main">
                         {/* All the main content gets inserted here, index.js, post.js */}
                         {children}
                     </main>

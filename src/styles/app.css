@@ -21,14 +21,8 @@
 /* Main
 /* ---------------------------------------------------------- */
 
-.site-main-dark {
+.site-main {
     padding: 4vw 0;
-    background-color:  var(--color-base);
-}
-
-.site-main-light {
-    padding: 4vw 0;
-    background-color: #fff;
 }
 
 /* Index
@@ -40,7 +34,7 @@
     grid-gap: 30px;
     grid-template-columns: 1fr;
     /* grid-template-columns: 1fr 1fr 1fr; */
-    padding: 0px 16vw;
+    padding: 0px 8vw;
 }
 
 @media (max-width: 980px) {
@@ -65,7 +59,7 @@
     transition: color .3s,box-shadow .3s,transform .3s,background-color .3s,border-color .3s,-webkit-transform .3s;
     position: relative;
     z-index: 1;
-    padding: 50px;
+    padding: 45px;
     background-color:inherit;
 }
 

@@ -1,13 +1,13 @@
 {
-  "name": "gatsby-starter-ghost",
-  "description": "A starter template to build lightning fast websites with Ghost and Gatsby",
+  "name": "khairy.me",
+  "description": "My Personal Website Build with Gatsby and Ghost Deployed in Netlify Hosted In Azure App Service",
   "version": "1.0.0",
   "license": "MIT",
   "author": "Ghost Foundation",
-  "homepage": "https://docs.ghost.org/api/gatsby/",
+  "homepage": "https://khairy.me",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tryghost/gatsby-starter-ghost.git"
+    "url": "git+https://github.com/omarkhairy21/khairy.me"
   },
   "resolutions": {
     "sharp": "0.23.4"
@@ -16,7 +16,7 @@
     "node": ">= 8.9.0"
   },
   "bugs": {
-    "url": "https://github.com/tryghost/gatsby-starter-ghost/issues"
+    "url": "https://github.com/omarkhairy21/khairy.me"
   },
   "keywords": [
     "gatsby",

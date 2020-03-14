@@ -33,7 +33,7 @@ h6 {
 }
 
 .light .site-head {
-  background: linear-gradient(45deg, #26edd1, #5b7a81) 
+  background: linear-gradient(45deg, #5b7a81,#26edd1 ) 
 }
 .light .site-foot {
   background: #fff;

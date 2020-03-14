@@ -15,7 +15,6 @@
   display: inline-block;
   padding: 5px 10px;
   color: #fff;
-  opacity: 0.7;
 }
 
 .site-nav-item:hover {
@@ -67,7 +66,6 @@
   padding: 0;
   font-size: 2.4rem;
   line-height: 1.3em;
-  opacity: 0.7;
 }
 
 .site-nav {
@@ -81,6 +79,7 @@
 
 .site-nav-left {
   margin: 0 20px 0 -10px;
+  font-size: larger;
 }
 
 .site-nav-button {
